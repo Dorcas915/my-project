@@ -1,0 +1,23 @@
+{
+    "weather": {
+        "temperature": "22°C",
+        "humidity": "60%",
+        "condition": "Sunny",
+        "img": "https://agsafety.osu.edu/sites/agsafety/files/newsletter_article/image/sunny-day-4800x3200-4k-4423.jpg" 
+        
+     },
+
+         "soil": {
+        "moisture": "45%",
+        "pH": "6.5",
+        "img":"https://cdn.prod.website-files.com/66604a97df59732aab43fcc8/673fb7037538d284467ff7d1_soil_small.webp"
+        
+         },
+
+    "irrigation": {
+        "status": "off",
+        "last_irrigated": "2024-06-15 08:00:00",
+        "img": "https://agri-route.com/cdn/shop/articles/Micro-Irrigation-Fund.jpg?v=1687588515"
+        }
+  }
+
