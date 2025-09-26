@@ -1,0 +1,148 @@
+Smart Farm API
+
+A Flask-based REST API that supports smart farming operations such as monitoring sensors, managing crops, irrigation schedules, and weather data.
+The API stores information in a SQLite database using SQLAlchemy as the ORM.
+
+This project includes logging, error handling, observability features, and documentation.
+The application is containerized using Docker and Docker Compose for easier deployment.
+
+Author: Dorcas Chepkoech — Sept 2025
+
+## Table of Contents
+
+Features
+
+Live Preview
+
+Requirements
+
+Installation
+
+API Documentation
+
+Testing
+
+Contributing and Making Changes
+
+License
+
+Contact Information
+
+## Features
+
+Monitor soil moisture, temperature, and humidity
+
+Manage crop and irrigation schedules
+
+Store readings in a SQLite database
+
+Input validation and error handling
+
+Logging with Python logging module
+
+Observability/monitoring integration (e.g., Sentry)
+
+Containerized with Docker & Docker Compose
+
+API documented for easy integration
+
+## Live Preview
+
+If deployed, visit
+https://app.netlify.com/projects/sparkling-monstera-16b605/deploys/68d6edf645ba18167cde9339
+
+
+
+## Requirements
+
+Python 3
+
+Flask
+
+Docker
+
+Docker Compose
+
+## Installation
+
+Clone the repository:
+
+git clone https://github.com/Dorcas915/my-project.git
+cd my-project
+
+
+Create a .env file and add:
+
+FLASK_ENV=developmhttp://localhost:5500ent
+FLASK_APP=app.py
+
+
+Build and start Docker container:
+
+docker-compose up --build
+
+
+Run migrations and seed file (if applicable):
+
+flask db migrate
+flask db upgrade
+
+
+Navigate to:
+
+http://localhost:5500
+
+
+Test an endpoint using Postman:
+
+
+Body (JSON):
+
+{
+    "temperature": 22,
+    "humidity": 60,
+    "soil_moisture": 45
+}
+
+## API Documentation
+This API has been documented on render
+https://dashboard.render.com/web/srv-d3bfcv7diees73al5p60/deploys/dep-d3bfcvfdiees73al5pgg .weather
+
+## Testing
+
+Run tests with:
+
+docker-compose run tests
+
+## Contributing and Making Changes
+
+Create a new branch
+
+git checkout -b improve-feature
+
+
+Make changes on the codebase
+
+Build and run with Docker to test
+
+Commit changes
+
+git commit -am "Improve Smart Farm feature"
+
+
+Push to GitHub
+
+git push origin improve-feature
+
+
+Open a Pull Request
+
+## License
+
+MIT License
+Copyright (c) 2025 Dorcas Chepkoech
+
+## Contact Information
+
+Email: dorcas.chepkoech@student.moringaschool.com
+
